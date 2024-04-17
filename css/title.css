@@ -1,0 +1,79 @@
+.title-container {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.title-prefix {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+}
+
+.title {
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4em;
+    /* background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%); */
+    background: linear-gradient(109.6deg, rgb(249, 79, 146) 11.2%, rgb(253, 114, 114) 91.1%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-image {
+    width: 100%;
+    border-radius: 2em;
+    border: dashed rgb(253, 114, 114) 0.2em;
+    padding: 0.2em;
+    /* border-width: 30px; */
+    /* border-style: dotted; */
+    /* border-image: linear-gradient(109.6deg, rgb(249, 79, 146) 11.2%, rgb(253, 114, 114) 91.1%) */
+}
+
+.header {
+    margin: 2em;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        grid-template-columns: 1fr;
+    }
+}
+
+.title-button-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-button {
+    font-size: 1em;
+    text-decoration: none;
+    background: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 2em;
+    /* border: solid white 0.15em; */
+    padding: 0.5em 1em;
+    transition: "color background" 0.15s linear;
+}
+
+.title-button:hover {
+    background: black;
+    color: white;
+}
